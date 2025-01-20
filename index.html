@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <div class="bg-[#1D3557] p-4 flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="bnc-removebg-preview.png" alt="Logo" class="h-12 w-auto mr-6">
+            <div class="relative text-white">
+                <span class="block mb-1">News</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-auto cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+                <div class="absolute bg-white shadow-md mt-2 rounded w-32 hidden">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white text-right flex items-center space-x-6">
+            <a href="#" class="flex items-center hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c1.104 0 2-.896 2-2h-4c0 1.104.896 2 2 2zm6-6v-5c0-3.314-2.686-6-6-6s-6 2.686-6 6v5l-2 2v1h16v-1l-2-2z" />
+                </svg>
+                Notifications
+            </a>
+            <a href="#" class="flex items-center hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v4l4 1-4 1v4l-4-3-4 3v-4l-4-1 4-1V8l4 3 4-3z" />
+                </svg>
+                19 South
+            </a>
+            <a href="#" class="flex items-center hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 2L6 7h3v4h4V7h3L13 2z" />
+                </svg>
+                Search
+            </a>
+            <a href="#" class="flex items-center hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18v-6h2V9h-2V7a3 3 0 1 1 6 0v2h-2v2h2v6h-2v6h-4v-6h-2v-6h2V9h-2V7a3 3 0 1 1 6 0v2h-2v2h-2z" />
+                </svg>
+                Login
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold mb-6">Latest News</h2>
+
+        <!-- Latest News Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Latest Articles</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Breaking News: New Technology Innovations</h4>
+                        <p class="text-gray-600 mb-4">Stay updated on the latest technology innovations and how they are transforming the world. Explore the top advancements in the industry.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Global Politics: Shaping the Future</h4>
+                        <p class="text-gray-600 mb-4">In-depth analysis of global political trends and how they affect economies and societies. Key insights into major elections and policy changes.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Sports Highlights: Major Events</h4>
+                        <p class="text-gray-600 mb-4">Catch up on the most exciting sports moments from around the world. From football to basketball, we cover the biggest events.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Latest Articles</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Breaking News: New Technology Innovations</h4>
+                        <p class="text-gray-600 mb-4">Stay updated on the latest technology innovations and how they are transforming the world. Explore the top advancements in the industry.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Global Politics: Shaping the Future</h4>
+                        <p class="text-gray-600 mb-4">In-depth analysis of global political trends and how they affect economies and societies. Key insights into major elections and policy changes.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Sports Highlights: Major Events</h4>
+                        <p class="text-gray-600 mb-4">Catch up on the most exciting sports moments from around the world. From football to basketball, we cover the biggest events.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trending News Section -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Trending Articles</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Health Tips: Staying Fit</h4>
+                        <p class="text-gray-600 mb-4">Learn the best tips for maintaining a healthy lifestyle. From fitness routines to nutrition, stay in shape with expert advice.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Entertainment Buzz: Top Movies</h4>
+                        <p class="text-gray-600 mb-4">Get the latest buzz from the entertainment world. Check out upcoming movies, celebrity gossip, and trending TV shows.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+
+                <article class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Article Image" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Tech Revolution: The Future of AI</h4>
+                        <p class="text-gray-600 mb-4">Explore how Artificial Intelligence is reshaping industries, enhancing productivity, and revolutionizing the way we work and live.</p>
+                        <a href="#" class="text-red-500 hover:underline">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <div class="relative">
+            <h2 class="text-2xl font-bold mb-4">بالفيديو</h2>
+
+            <div id="carousel" class="flex overflow-x-auto gap-4 scroll-smooth">
+                <!-- Added more video blocks -->
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-lg flex-shrink-0">
+                    <video src="https://via.placeholder.com/300x180" alt="News Video" class="w-full rounded" controls></video>
+                    <div class="mt-2">
+                        <span class="bg-blue-500 text-white px-2 py-1 rounded text-sm">تقارير نشرة الأخبار</span>
+                        <p class="mt-1">في غزة... ساعة الصفر تقترب لتنفيذ اتفاق إطلاق النار</p>
+                    </div>
+                </div>
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-lg flex-shrink-0">
+                    <video src="https://via.placeholder.com/300x180" alt="News Video" class="w-full rounded" controls></video>
+                    <div class="mt-2">
+                        <span class="bg-purple-500 text-white px-2 py-1 rounded text-sm">أخبار لبنان</span>
+                        <p class="mt-1">رسالة امتنان من ماكرون لميقاتي</p>
+                    </div>
+                </div>
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-lg flex-shrink-0">
+                    <video src="https://via.placeholder.com/300x180" alt="News Video" class="w-full rounded" controls></video>
+                    <div class="mt-2">
+                        <span class="bg-purple-500 text-white px-2 py-1 rounded text-sm">أخبار لبنان</span>
+                        <p class="mt-1">ماكرون بين اللبنانيين في شارع الجمّيزة (فيديو)</p>
+                    </div>
+                </div>
+                <!-- More video blocks added -->
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-lg flex-shrink-0">
+                    <video src="https://via.placeholder.com/300x180" alt="News Video" class="w-full rounded" controls></video>
+                    <div class="mt-2">
+                        <span class="bg-green-500 text-white px-2 py-1 rounded text-sm">أخبار دولية</span>
+                        <p class="mt-1">حدث مفاجئ في مؤتمر الأمم المتحدة</p>
+                    </div>
+                </div>
+                <div class="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-lg flex-shrink-0">
+                    <video src="https://via.placeholder.com/300x180" alt="News Video" class="w-full rounded" controls></video>
+                    <div class="mt-2">
+                        <span class="bg-yellow-500 text-white px-2 py-1 rounded text-sm">أخبار الرياضة</span>
+                        <p class="mt-1">توقعات بفوز فريق إيطالي في دوري الأبطال</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons with Improved Arrow Styles -->
+            <button id="prev" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-red-500 text-white p-4 rounded-full shadow-lg hover:bg-red-700">
+                <span class="text-2xl font-bold">‹</span>
+            </button>
+            <button id="next" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-red-500 text-white p-4 rounded-full shadow-lg hover:bg-red-700">
+                <span class="text-2xl font-bold">›</span>
+            </button>
+        </div>
+
+    </main>
+    <nav class="bg-red-700 text-white p-4 mt-6">
+        <ul class="flex justify-around">
+            <li><a href="#day" class="text-lg">24 ساعة</a></li>
+            <li><a href="#week" class="text-lg">7 أيام</a></li>
+            <li><a href="#month" class="text-lg">شهر</a></li>
+        </ul>
+    </nav>
+
+    <!-- تبويبات المحتوى -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="tabs">
+            <!-- تبويب 24 ساعة -->
+            <div id="day" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-4">
+                    <!-- مقال 1 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image1.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">عرب و دولي | 12:36</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            بالصور - الداخلية السورية تعلن إحباط عملية تهريب أسلحة
+                        </a>
+                    </div>
+
+                    <!-- مقال 2 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image2.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">محليات | 14:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            أزمة المياه في لبنان وسبل معالجتها
+                        </a>
+                    </div>
+
+                    <!-- مقال 3 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image3.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">سياسة | 16:45</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            تقارير جديدة حول تدهور العلاقات بين الشرق الأوسط وأوروبا
+                        </a>
+                    </div>
+
+                    <!-- مقال 4 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image4.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">اقتصاد | 10:30</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            الحروب الاقتصادية وتأثيراتها على اقتصاديات الدول
+                        </a>
+                    </div>
+
+                    <!-- مقال 5 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image5.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">رياضة | 08:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            نتائج مباريات كأس العالم الأخيرة
+                        </a>
+                    </div>
+
+                    <!-- مقال 6 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image6.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">تكنولوجيا | 20:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            اختراعات جديدة تقود مستقبل الذكاء الاصطناعي
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- تبويب 7 أيام -->
+            <div id="week" class="tab-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-4">
+                    <!-- مقال 1 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image7.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">عرب و دولي | 11:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            الأوضاع السياسية في الشرق الأوسط خلال أسبوع
+                        </a>
+                    </div>
+
+                    <!-- مقال 2 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image8.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">محليات | 13:45</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            مشاريع جديدة لتحسين الوضع البيئي في لبنان
+                        </a>
+                    </div>
+
+                    <!-- مقال 3 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image9.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">رياضة | 15:30</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            الرياضة العربية تتقدم في منافسات الألعاب الأولمبية
+                        </a>
+                    </div>
+
+                    <!-- مقال 4 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image10.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">اقتصاد | 16:10</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            أزمة الغذاء في الدول النامية وتأثيراتها الاقتصادية
+                        </a>
+                    </div>
+
+                    <!-- مقال 5 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image11.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">تكنولوجيا | 17:45</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            أسرار الذكاء الاصطناعي في تطوير التقنيات الحديثة
+                        </a>
+                    </div>
+
+                    <!-- مقال 6 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image12.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">عالمية | 19:20</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            كيفية تأثير الاقتصاد العالمي على الأسواق المحلية
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- تبويب الشهر -->
+            <div id="month" class="tab-content hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-4">
+                    <!-- مقال 1 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image13.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">عرب و دولي | 09:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            التحولات السياسية في دول الشرق الأوسط خلال الشهر
+                        </a>
+                    </div>
+
+                    <!-- مقال 2 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image14.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">رياضة | 12:15</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            نتائج البطولات العالمية خلال الشهر
+                        </a>
+                    </div>
+
+                    <!-- مقال 3 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image15.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">اقتصاد | 14:30</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            توقعات اقتصادية جديدة للعام المقبل
+                        </a>
+                    </div>
+
+                    <!-- مقال 4 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image16.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">عالمية | 16:00</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            التوترات بين القوى الكبرى وتأثيراتها على الاقتصاد العالمي
+                        </a>
+                    </div>
+
+                    <!-- مقال 5 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image17.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">تكنولوجيا | 18:45</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            الثورة التكنولوجية وتأثيرها على المستقبل
+                        </a>
+                    </div>
+
+                    <!-- مقال 6 -->
+                    <div class="flex flex-col items-center border-b border-gray-300 pb-4">
+                        <img src="image18.jpg" alt="News" class="w-full h-48 object-cover rounded-sm mb-3">
+                        <div class="text-sm text-gray-500">محليات | 20:30</div>
+                        <a href="#" class="block font-bold text-lg text-black hover:text-red-600">
+                            مشاريع البنية التحتية في لبنان وتحقيق التنمية
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript لتمكين التبديل بين التبويبات -->
+    <script>
+        const tabs = document.querySelectorAll('.nav li a');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                tabs.forEach(t => t.classList.remove('text-red-700'));
+                tab.classList.add('text-red-700');
+
+                const targetTab = document.querySelector(tab.getAttribute('href'));
+                tabContents.forEach(content => content.classList.add('hidden'));
+                targetTab.classList.remove('hidden');
+            });
+        });
+    </script>
+        
+    <!-- Footer -->
+    <footer class="bg-[#1D3557] text-white p-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 News Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        document.getElementById('next').addEventListener('click', () => {
+            carousel.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+        document.getElementById('prev').addEventListener('click', () => {
+            carousel.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
